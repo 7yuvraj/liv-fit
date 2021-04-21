@@ -299,7 +299,8 @@ def create_app():
         return send_file(img, mimetype='img/png')
 
 
-return 
+return fapp
+
 
 if __name__=="__main__":
     fapp.run(debug=True)
