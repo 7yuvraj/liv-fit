@@ -296,6 +296,8 @@ def create_app():
         fig.savefig(img)
         img.seek(0)
         return send_file(img, mimetype='img/png')
+    
+    return fapp
 
 if __name__=="__main__":
     fapp.run(debug=True)
