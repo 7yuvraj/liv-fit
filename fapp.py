@@ -12,7 +12,6 @@ import seaborn as sns
 def create_app():
 
     fapp = Flask(__name__)
-    fapp.secret_key='navdeep'
 
     x=[]
     y=[]
