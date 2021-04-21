@@ -246,11 +246,11 @@ class CustomerAssistance(Customer):
                     'Squat': 0,
                     'Double Jump': 0}
         
-        musclegain_exercises = {'MG1': 0,
-                                'MG2': 0,
-                                'MG3': 0,
-                                'MG4': 0,
-                                'MG5': 0}
+        musclegain_exercises = {'Running': 0,
+                                'Push-ups': 0,
+                                'Crunches': 0,
+                                'Dips': 0,
+                                'Plank': 0}
         customer = CustomerAssistance.get_customer(email)
         data = Database.find("users", {'aim': customer.aim})
 
