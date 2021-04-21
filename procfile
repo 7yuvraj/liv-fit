@@ -1,2 +1,1 @@
-web: gunicorn "fapp:create_app()"
-https://github.com/7yuvraj/liv-fit/blob/main/procfile
+web: gunicorn fapp:fapp
