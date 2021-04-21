@@ -6,8 +6,6 @@ from Models.appointments import Appointment
 
 
 fapp = Flask(__name__)
-fapp.secret_key='navdeep'
-
 
 @fapp.route('/')
 def home_page():
