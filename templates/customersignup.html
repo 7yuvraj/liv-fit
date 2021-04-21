@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="/static/css/normalize.css"/>
+    <link rel="stylesheet" href="/static/css/styles.css"/>
+</head>
+<body>
+<h1>Welcome to Customer's Sign Up Page</h1>
+    <div class="card-wrapper">
+        <div class="card">
+            <h2 class="center">Create an Account</h1>
+                <form name="sign_form" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+
+                    <label for="name">Age</label>
+                    <input type="number" name="age" required>
+
+                    <label for="name">Gender</label>
+                    <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label><br>
+                    <br>
+
+                    <label for="name">Occupation</label>
+                    <input type="text" name="occupation" required>
+            
+
+                    <label for="name">Email</label>
+                    <input type="email" name="email" required>
+            
+                    <label for="name">Password</label>
+                    <input type="password" name="password" required>
+            
+
+                    <label for="name">Aim</label>
+                    <input type="radio" id="weightloss" name="aim" value="weightloss" required>
+                    <label for="weightloss">Weight Loss</label>
+                    <input type="radio" id="musclegain" name="aim" value="musclegain" required>
+                    <label for="musclegain">Muscle Gain</label>
+
+                    <input type="submit" value="Sign Up" class="btn">
+
+                </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DATA STRUCTURES</title>
+    </head>
+    <body>
+        <h2>
+            Conditionals in JINJA2
+        </h2>
+        <h3>
+            Basic Comparison
+        </h3>
+        {% if company=="APPLE" %}
+        <h4>
+            Available Apple Proucts!
+        </h4>
+        <ul>
+            <li>
+                IPhone
+            </li>
+            <li>
+                IPad
+            </li>
+            <li>
+                IMac
+            </li>
+        </ul>
+        {% elif company=="MICROSOFT" %}
+        <h5>
+            Available Microsoft Products!
+        </h5>
+        <ul>
+            <li>
+                MS Windows
+            </li>
+            <li>
+                Surface Pro
+            </li>
+            <li>
+                Surface Book
+            </li>
+        </ul>
+        {% else %}
+        <p>
+            No {{copany}} Products available
+        </p>
+        {% endif %}
+    </body>
+</html>

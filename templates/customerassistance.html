@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  img {
+  width: 300px;
+  
+  margin-right: 100px;
+  object-fit: cover;
+  }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5000/customerassistance/">Customer Assistance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5000/customerprofile">Back</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<div class="card-wrapper">
+<div class="card">
+    <h1 class="center">"Comparison of Average Exercise Time"</h1>
+    <p>Your Average Exercise Time is : {{customer_avg}} minutes</p>
+    <p>Overall Average Exercise Time is: {{total_avg}} minutes</p>
+
+    <h2 class="center">"Most Popular Exercises"</h2>
+    <p>1. {{popular[0]}}</p>
+    <p>2. {{popular[1]}}</p>
+    <h3>"Your Progress Report"</h3>
+    <img src=>
+</div>
+</div>
+{% endblock %}
